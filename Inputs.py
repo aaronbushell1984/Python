@@ -1,4 +1,4 @@
-# Python has Input Output and Error Streams
+# Python has Input, Output and Error Streams
 # Python executes code sequentially - Line by Line
 # Python style guide https://www.python.org/dev/peps/pep-0008/
 
