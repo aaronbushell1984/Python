@@ -95,7 +95,7 @@ print('isn\'t')
 
 # 6.	Explain the differences between the data types int and float.
 # Float has decimals
-# Integer is a dingle value
+# Integer is a single value
 
 # 7.	Write the values of the following scientific notation numbers:
 #a.	 3.5576e2 355.76
