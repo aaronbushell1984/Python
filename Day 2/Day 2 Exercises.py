@@ -103,3 +103,18 @@ if x > y:
     print(x, y)
 else:
     print(y, x)
+
+# The variables x and y refer to numbers. Write a code segment that prompts the user for an arithmetic operator and prints the value obtained by applying that operator to x and y
+total = 0
+x = number = int(input("Please enter a number:"))
+y = number = int(input("Please enter a number:"))
+operator = input("Please enter and arithmetic operator")
+while operator:
+    if operator == "+":
+        total = x + y
+    elif operator == "-":
+        total = x - y
+        break
+print(total)
+
+
