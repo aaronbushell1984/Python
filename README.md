@@ -1,2 +1,2 @@
 # Python
-<img src="./assets/pythonXfdm.png" width="50%">
+<img src="./assets/pythonXfdm.png" width="25%">
