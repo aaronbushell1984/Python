@@ -97,17 +97,17 @@ for exponent in range(1, number+1):
 
 # Questions from Module 3
 # 8. Assume that the variables x and y refer to strings. Write a code segment that prints these strings in alphabetical order. You should assume that they are not equal.
-x = "apple"
-y = "banana"
+x = input("Please enter your first word: ")
+y = input("Please enter your second word: ")
 if x > y:
-    print(x, y)
-else:
     print(y, x)
+else:
+    print(x, y)
 
 # The variables x and y refer to numbers. Write a code segment that prompts the user for an arithmetic operator and prints the value obtained by applying that operator to x and y
 total = 0
-x = number = int(input("Please enter a number:"))
-y = number = int(input("Please enter a number:"))
+x = int(input("Please enter a number:"))
+y = int(input("Please enter a number:"))
 operator = input("Please enter and arithmetic operator")
 while operator:
     if operator == "+":
