@@ -94,3 +94,12 @@ for exponent in range(1, 6):
 number = int(input("Please enter a number:"))
 for exponent in range(1, number+1):
     print("*" * exponent)
+
+# Questions from Module 3
+# 8. Assume that the variables x and y refer to strings. Write a code segment that prints these strings in alphabetical order. You should assume that they are not equal.
+x = "apple"
+y = "banana"
+if x > y:
+    print(x, y)
+else:
+    print(y, x)
