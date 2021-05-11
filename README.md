@@ -1,2 +1,2 @@
 # Python
-<img src="/assets/pythonXfdm">
+<img src="python/assets/pythonXfdm.png">
