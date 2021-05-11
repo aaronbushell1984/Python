@@ -13,7 +13,7 @@ while counter <= 10 and counter > 0:
 
 # Infinite Loop
 while True:
-    response = int(input("eneter a number:"))
+    response = int(input("enter a number:"))
     if response % 7 == 0:
         print("number is divisible by 7")
         break

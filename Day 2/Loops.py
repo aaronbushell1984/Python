@@ -25,48 +25,48 @@ for language in languages:
         break
     print("Still in loop")
 
-"""
+
 # ***SLIDES***
 # • Repetition statements (or loops) repeat an action
 # • Each repetition of action is known as pass or iteration
 
 for eachPass in range(4):
-print("It's alive!", end = " ")
+    print("It's alive!", end = " ")
 #It's alive! It's alive! It's alive! It's alive!
 
 number = 2
 exponent = 3
 product = 1
 for eachPass in range(exponent):
-product = product * number
-print(product, end=" ")
+    product = product * number
+    print(product, end=" ")
 
 # Loops that count through a range of numbers:
 product = 1
 for count in range(4):
-product = product * (count + 1)
-product
+    product = product * (count + 1)
+    product
 
 # To specify an explicit lower bound:
 product = 1
 for count in range(1, 5):
-product = product * count
+    product = product * count
 product
 
 # Example: bound-delimited summation
 lower = int(input("Enter the lower bound: "))
-Enter the lower bound: 1
+# Enter the lower bound: 1
 upper = int(input("Enter the upper bound: "))
-Enter the upper bound: 10
+# Enter the upper bound: 10
 theSum = 0
 for number in range(lower, upper + 1):
-theSum = theSum + number
+    theSum = theSum + number
 theSum
 
-Example:
+# Example:
 # Count from 1 through 4, we think
 for count in range(1,4):
-print(count)
+    print(count)
 #NB. Loop actually counts from 1 through 3
 
 # Traversing the Contents of a Data Sequence
@@ -76,30 +76,30 @@ list(range(4))
 list(range(1, 5))
 #[1, 2, 3, 4]
 
-Example:
+# Example:
 for number in [6, 444 ,8]:
-print(number, end=" ")
+    print(number, end=" ")
 #6 444 8
 
 # Specifying the Steps in the Range
-range expects a third argument that allows you specify a step value:
+#range expects a third argument that allows you specify a step value:
 list(range(1, 6, 1)) # Same as using two arguments
-[1, 2, 3, 4, 5]
+# [1, 2, 3, 4, 5]
 list(range(1, 6, 2)) # Use every other number
-[1, 3, 5]
+# [1, 3, 5]
 list(range(1, 6, 3)) # Use every third number
-[1, 4]
-• Example:
+# [1, 4]
+# • Example:
 theSum = 0
 for count in range(2, 11, 2):
-theSum += count
+    theSum += count
 theSum
 30
 
 # Loops that Count Down
-Example:
+#Example:
 for count in range(10, 0, -1):
-print(count, end = " ")
+    print(count, end = " ")
 # 10 9 8 7 6 5 4 3 2 1
 list(range(10, 0, -1))
 # [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
@@ -109,7 +109,7 @@ list(range(10, 0, -1))
 # If a string is passed to a for loop, the string is broken up
 # Example:
 for character in "Hello!":
-print(character)
+    print(character)
 #H
 #e
 #l
@@ -124,7 +124,7 @@ print(character)
 # formatted string
 # • The print function automatically begins printing an output datum in the first available column
 for exponent in range(7, 11):
-print(exponent, 10 ** exponent)
+    print(exponent, 10 ** exponent)
 # 7 10000000
 # 8 100000000
 # 9 1000000000
@@ -132,12 +132,11 @@ print(exponent, 10 ** exponent)
 
 # Formatting Text for Output 3/..
 # To format data value of type float:
-%<field width>.<precision>f
-where .<precision> is optional
+#%<field width>.<precision>f
+    #where .<precision> is optional
 # Examples:
 salary = 100.00
 print("Your salary is $" + str(salary))
-# Your salary is $100.0
+#Your salary is $100.0
 print("Your salary is $%0.2f" % salary)
 # Your salary is $100.00
-"""
