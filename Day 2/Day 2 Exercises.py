@@ -40,7 +40,6 @@ else:
 	# Use your dictionary to print a series of statements about each of these vehicles.
 	# e.g. "I would like to own a Rolls-Royce Silver Wraith",
 	# "I would like to own a Massey Ferguson Combine Harvester" etc.
-
 car_dictionary = {
   "brand": ["Ford", "Rolls Royce", "Massey Ferguson"],
   "model": ["Mustang", "Silver Wraith", "Combine Harvester"]
