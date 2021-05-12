@@ -16,20 +16,65 @@ if "c++" in languages:
     print("C++ not present")
 
 # list manipulation
+# append and insert
 languages.append("c++")
 languages.insert(2, "c#")
 print("After additions", languages)
+
 # change individual
 languages[2] = "C#"
+
 # remove last
 languages.pop()
+
 # defend against errors
 if "Python" in languages:
     languages.remove("Python")
 print("Altered list", languages)
+
 # sort alphabettically or numerically
 languages.sort()
 print("sorted", languages)
+
+# Reversing
+languages.reverse()
+print("Reversed", languages)
+
+# Extend another list
+# NB EXTEND AND APPEND DO DIFFERENT THINGS - APPENDING A LIST NESTS THE LIST
+other_languages = ["Cobol", "Pascal"]
+languages.extend(other_languages)
+print("Extended languages", languages)
+
+# mixed lists are possible but may cause problems with type
+empty_list = []
+empty_list.append("Apple")
+empty_list.append(0.48)
+empty_list.append(12)
+empty_list.append(True)
+print(empty_list)
+
+# built-in functions
+number = [1,2,3,4,5,6,13,4,9]
+print(min(number))
+# 1
+print(max(number))
+# 13
+print(len(number))
+# 9
+
+# equality - NB REFERENCES POINT TO SAME LIST
+numbers2 = number
+print(number == numbers2)
+#true
+numbers2.append(99)
+print(number == numbers2)
+#true
+print(number)
+# the equality check only checks if contents are the same
+numbers3 = [1,2,3,4,5,6,13,4,9]
+print(number == numbers3)
+#true
 
 # slicing
 name = "Bill Bloggs"
@@ -48,6 +93,23 @@ at_index = email.index("@")
 print("index pf @ character =", at_index)
 # slice
 print("name only part =", email[0:at_index])
+
+# Remove all even numbers from this list
+# NB the list must be copied or loop breaks
+numbers = [1,2,3,4,5,6,7,88,2]
+for number in numbers.copy():
+    if number % 2 == 0:
+        numbers.remove(number)
+print("Odd numbers", numbers)
+
+# Not using max but with a loop and if statements, find and print the largest number
+more_numbers = [9,5,7,26,23]
+largest = 0
+for number in more_numbers:
+    if number > largest:
+        largest = number
+
+print("Largest =", largest)
 
 
 # ***SLIDES***
