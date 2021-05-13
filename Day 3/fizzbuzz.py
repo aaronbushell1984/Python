@@ -8,7 +8,7 @@ def is_buzz(number):
 
 def is_fizz_buzz(number):
     """returns if the number is divisible by 3 and 5"""
-    return is_fizz and is_buzz
+    return is_fizz(number) and is_buzz (number)
 
 def apply_fizz_buzz_rules(number):
     """checks divisible by 3, 5 or both and returns Fizz and Buzz accordingl"""
