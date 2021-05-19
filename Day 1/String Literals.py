@@ -37,7 +37,7 @@ print(number.bit_length())
 # Index Example
 email = "bill.bloggs@fdmgroup.com"
 at_index = email.index("@")
-print("index pf @ character =", at_index)
+print("index of @ character =", at_index)
 # slice
 print("name only part =", email[0:at_index])
 
